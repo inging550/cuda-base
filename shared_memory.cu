@@ -30,7 +30,20 @@ int main()
 	}
 	cudaMalloc((void**)&d_a, sizeof(float) * 10);
 	cudaMemcpy((void*)d_a, (void*)h_a, sizeof(float) * 10, cudaMemcpyHostToDevice);
+	// 开始计算
+	cudaEvent_t e_start, e_end; // 建立事件对象
+	cudaEventCreate(&e_start); // 建立事件
+	cudaEventCreate(&e_end);
+	cudaEventRecord(e_start, 0);  // 记录时间戳
+
 	gpu_share_memory << <1, 10 >> > (d_a);
+
+	cudaDeviceSynchronize();  // 等待核函数执行完毕
+	cudaEventRecord(e_end, 0);  // 等待记录命令执行完毕
+	cudaEventSynchronize(e_end);  // 记录时间戳
+	float Time;
+	cudaEventElapsedTime(&Time, e_start, e_end);  // 计算时间
+	printf("Time:%f ms\n", Time);
 	cudaMemcpy((void*)h_a, (void*)d_a, sizeof(float)*10, cudaMemcpyDeviceToHost);
 	for (int i = 0; i < 10; i++)
 	{

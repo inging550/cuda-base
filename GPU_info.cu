@@ -12,6 +12,7 @@ int main()
 {
     cudaDeviceProp dp;
     cudaGetDeviceProperties(&dp, 0);
+    
     printf("\nDevice %d: \"%s\"\n", 0, dp.name);
     printf("Total amount of global memory: %.0f MBytes\n", (float)dp.totalGlobalMem);
     printf("(%d) Multiprocessors\n", dp.multiProcessorCount);
@@ -32,5 +33,6 @@ int main()
     printf("单个 grid 中 block 的最大维度(x,y,z),(%d, %d, %d)\n",dp.maxGridSize[0],
                                                 dp.maxGridSize[1],
                                                 dp.maxGridSize[2]);
+    printf("是否支持计算与传输重叠：%d \n", dp.deviceOverlap);
     return 0;
 }
