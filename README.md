@@ -8,5 +8,6 @@ texture_memory.cu --- 纹理内存使用
 # 矩阵运算
 vector_add.cu --- 向量加法 \
 vector_dotMultiply.cu --- 向量点乘\
-matrix_Multiply.cu --- 矩阵乘法 
+matrix_Multiply.cu --- 矩阵乘法 \
+cudaStream.cu --- CUDA多流实现向量加法
 
