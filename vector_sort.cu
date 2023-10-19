@@ -35,13 +35,9 @@ __global__ void sort2(int* d_a, int* d_out)
   __shared__ int sh_a[threadNum];
   for(int i=0;i<(N/threadNum+1);i++)
   {
+    // 将数组分段，然后逐段计算大于val的个数
     sh_a[index] = d_a[index + i*threadNum];
     __syncthreads();
-    // for(int i=0;i<3;i++)
-    // {
-    //   printf("%d %d %d \n", sh_a[0], sh_a[1], sh_a[2]);
-    //   // printf("%d %d %d\n",val, tid, index);
-    // }
     int time = (res>=threadNum) ? threadNum : res;
     for(int j=0;j<time;j++)
     {
