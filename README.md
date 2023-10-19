@@ -10,4 +10,4 @@ vector_add.cu --- 向量加法 \
 vector_dotMultiply.cu --- 向量点乘\
 matrix_Multiply.cu --- 矩阵乘法 \
 cudaStream.cu --- CUDA多流实现向量加法
-
+vector_sort.cu --- 向量排序
