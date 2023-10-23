@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
-  "/home/zjl/桌面/project/CUDA/opencv-operate/img_read/img_create.cu" "/home/zjl/桌面/project/CUDA/opencv-operate/img_read/build/CMakeFiles/opencv_read.dir/img_create.cu.o"
+  "/home/zjl/桌面/project/CUDA/opencv-operate/img_read/img_create.cu" "/home/zjl/桌面/project/CUDA/opencv-operate/img_read/build/CMakeFiles/create_img.dir/img_create.cu.o"
   )
 set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
 

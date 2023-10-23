@@ -17,7 +17,7 @@ int main()
   String win_name = "My First Opencv Program";
   namedWindow(win_name);
   imshow(win_name, img);
-  waitKey(0);
+  waitKey(0);  // 程序暂停并等待用户输入
   destroyWindow(win_name);
   return 0;
 }

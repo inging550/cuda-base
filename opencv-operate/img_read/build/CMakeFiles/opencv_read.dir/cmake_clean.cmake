@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/opencv_read.dir/main.cu.o"
+  "CMakeFiles/opencv_read.dir/img_create.cu.o"
   "opencv_read"
   "opencv_read.pdb"
 )

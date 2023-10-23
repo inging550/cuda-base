@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named opencv_read
+# Target rules for targets named create_img
 
 # Build rule for target.
-opencv_read: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_read
-.PHONY : opencv_read
+create_img: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 create_img
+.PHONY : create_img
 
 # fast build rule for target.
-opencv_read/fast:
-	$(MAKE) -f CMakeFiles/opencv_read.dir/build.make CMakeFiles/opencv_read.dir/build
-.PHONY : opencv_read/fast
+create_img/fast:
+	$(MAKE) -f CMakeFiles/create_img.dir/build.make CMakeFiles/create_img.dir/build
+.PHONY : create_img/fast
 
-main.o: main.cu.o
+img_create.o: img_create.cu.o
 
-.PHONY : main.o
+.PHONY : img_create.o
 
 # target to build an object file
-main.cu.o:
-	$(MAKE) -f CMakeFiles/opencv_read.dir/build.make CMakeFiles/opencv_read.dir/main.cu.o
-.PHONY : main.cu.o
+img_create.cu.o:
+	$(MAKE) -f CMakeFiles/create_img.dir/build.make CMakeFiles/create_img.dir/img_create.cu.o
+.PHONY : img_create.cu.o
 
-main.i: main.cu.i
+img_create.i: img_create.cu.i
 
-.PHONY : main.i
+.PHONY : img_create.i
 
 # target to preprocess a source file
-main.cu.i:
-	$(MAKE) -f CMakeFiles/opencv_read.dir/build.make CMakeFiles/opencv_read.dir/main.cu.i
-.PHONY : main.cu.i
+img_create.cu.i:
+	$(MAKE) -f CMakeFiles/create_img.dir/build.make CMakeFiles/create_img.dir/img_create.cu.i
+.PHONY : img_create.cu.i
 
-main.s: main.cu.s
+img_create.s: img_create.cu.s
 
-.PHONY : main.s
+.PHONY : img_create.s
 
 # target to generate assembly for a file
-main.cu.s:
-	$(MAKE) -f CMakeFiles/opencv_read.dir/build.make CMakeFiles/opencv_read.dir/main.cu.s
-.PHONY : main.cu.s
+img_create.cu.s:
+	$(MAKE) -f CMakeFiles/create_img.dir/build.make CMakeFiles/create_img.dir/img_create.cu.s
+.PHONY : img_create.cu.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... opencv_read"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... create_img"
+	@echo "... img_create.o"
+	@echo "... img_create.i"
+	@echo "... img_create.s"
 .PHONY : help
 
 

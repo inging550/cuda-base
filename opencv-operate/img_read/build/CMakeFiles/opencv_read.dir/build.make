@@ -57,27 +57,27 @@ include CMakeFiles/opencv_read.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/opencv_read.dir/flags.make
 
-CMakeFiles/opencv_read.dir/main.cu.o: CMakeFiles/opencv_read.dir/flags.make
-CMakeFiles/opencv_read.dir/main.cu.o: ../main.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjl/桌面/project/CUDA/opencv-operate/img_read/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/opencv_read.dir/main.cu.o"
-	/usr/local/cuda-11.4/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/zjl/桌面/project/CUDA/opencv-operate/img_read/main.cu -o CMakeFiles/opencv_read.dir/main.cu.o
+CMakeFiles/opencv_read.dir/img_create.cu.o: CMakeFiles/opencv_read.dir/flags.make
+CMakeFiles/opencv_read.dir/img_create.cu.o: ../img_create.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjl/桌面/project/CUDA/opencv-operate/img_read/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/opencv_read.dir/img_create.cu.o"
+	/usr/local/cuda-11.4/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/zjl/桌面/project/CUDA/opencv-operate/img_read/img_create.cu -o CMakeFiles/opencv_read.dir/img_create.cu.o
 
-CMakeFiles/opencv_read.dir/main.cu.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/opencv_read.dir/main.cu.i"
+CMakeFiles/opencv_read.dir/img_create.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/opencv_read.dir/img_create.cu.i"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
 
-CMakeFiles/opencv_read.dir/main.cu.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/opencv_read.dir/main.cu.s"
+CMakeFiles/opencv_read.dir/img_create.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/opencv_read.dir/img_create.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
 # Object files for target opencv_read
 opencv_read_OBJECTS = \
-"CMakeFiles/opencv_read.dir/main.cu.o"
+"CMakeFiles/opencv_read.dir/img_create.cu.o"
 
 # External object files for target opencv_read
 opencv_read_EXTERNAL_OBJECTS =
 
-opencv_read: CMakeFiles/opencv_read.dir/main.cu.o
+opencv_read: CMakeFiles/opencv_read.dir/img_create.cu.o
 opencv_read: CMakeFiles/opencv_read.dir/build.make
 opencv_read: /usr/local/lib/libopencv_gapi.so.4.5.5
 opencv_read: /usr/local/lib/libopencv_highgui.so.4.5.5
