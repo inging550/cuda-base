@@ -13,3 +13,5 @@ cudaStream.cu --- CUDA多流实现向量加法
 vector_sort.cu --- 向量排序
 # opencv-operate - CUDA opencv处理 (使用cmake编译)
 img_read --- 读取一张图片
+cuda-module --- opencv中的CUDA模块常用函数
+img_operate --- 图像操作

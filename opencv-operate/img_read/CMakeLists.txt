@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.9)  # 版本要求
-project(create_img)  # 设置项目名
-enable_language(CUDA)  # 支持CUDA编程
+project(create_img CXX CUDA)  # 设置项目名
+# enable_language(CUDA)  # 支持CUDA编程
 # 设置C++以及CUDA语言标准
 set(CMAKE_CXX_STANDARD 11)  
 set(CMAKE_CUDA_STANDARD 11)

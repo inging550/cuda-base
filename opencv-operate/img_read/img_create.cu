@@ -1,3 +1,7 @@
+/*
+任务：创建一张图并编辑它
+子任务：画线，画框，画圆，写字
+*/
 #include <cuda.h>
 #include <cuda_runtime.h>
 #include <opencv2/opencv.hpp>

@@ -1,3 +1,6 @@
+/*
+任务打开一张图片
+*/
 #include <opencv2/opencv.hpp>
 #include <cuda.h>
 #include <cuda_runtime.h>
