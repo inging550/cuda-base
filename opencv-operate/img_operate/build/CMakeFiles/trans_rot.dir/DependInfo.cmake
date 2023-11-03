@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
-  "/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/trans_rot.cu" "/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles/img_operate.dir/trans_rot.cu.o"
+  "/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/trans_rot.cu" "/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles/trans_rot.dir/trans_rot.cu.o"
   )
 set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
 

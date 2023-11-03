@@ -11,5 +11,4 @@ link_libraries(${OpenCV_LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
 
-add_executable(${PROJECT_NAME} main.cu)
-
+add_executable(${PROJECT_NAME} trans_rot.cu)

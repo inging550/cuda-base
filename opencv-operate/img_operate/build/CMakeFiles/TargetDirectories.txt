@@ -1,3 +1,4 @@
 /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles/rebuild_cache.dir
 /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles/edit_cache.dir
-/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles/img_operate.dir
+/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles/filter.dir
+/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles/trans_rot.dir

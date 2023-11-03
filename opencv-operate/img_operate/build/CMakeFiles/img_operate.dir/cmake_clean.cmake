@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/img_operate.dir/main.cu.o"
+  "CMakeFiles/img_operate.dir/trans_rot.cu.o"
   "img_operate"
   "img_operate.pdb"
 )

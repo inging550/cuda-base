@@ -6,12 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/trans_rot.cu
+/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/filter.cu
 iostream
 -
 opencv2/opencv.hpp
 -
-opencv2/cudawarping.hpp
+opencv2/cudafilters.hpp
 -
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
@@ -366,7 +366,7 @@ opencv2/core/cvdef.h
 assert.h
 -
 
-/usr/local/include/opencv4/opencv2/cudawarping.hpp
+/usr/local/include/opencv4/opencv2/cudafilters.hpp
 opencv2/core/cuda.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core/cuda.hpp
 opencv2/imgproc.hpp

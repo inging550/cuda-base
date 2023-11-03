@@ -57,27 +57,27 @@ include CMakeFiles/img_operate.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/img_operate.dir/flags.make
 
-CMakeFiles/img_operate.dir/main.cu.o: CMakeFiles/img_operate.dir/flags.make
-CMakeFiles/img_operate.dir/main.cu.o: ../main.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/img_operate.dir/main.cu.o"
-	/usr/local/cuda-11.4/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/main.cu -o CMakeFiles/img_operate.dir/main.cu.o
+CMakeFiles/img_operate.dir/trans_rot.cu.o: CMakeFiles/img_operate.dir/flags.make
+CMakeFiles/img_operate.dir/trans_rot.cu.o: ../trans_rot.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/img_operate.dir/trans_rot.cu.o"
+	/usr/local/cuda-11.4/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/trans_rot.cu -o CMakeFiles/img_operate.dir/trans_rot.cu.o
 
-CMakeFiles/img_operate.dir/main.cu.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/img_operate.dir/main.cu.i"
+CMakeFiles/img_operate.dir/trans_rot.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/img_operate.dir/trans_rot.cu.i"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
 
-CMakeFiles/img_operate.dir/main.cu.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/img_operate.dir/main.cu.s"
+CMakeFiles/img_operate.dir/trans_rot.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/img_operate.dir/trans_rot.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
 # Object files for target img_operate
 img_operate_OBJECTS = \
-"CMakeFiles/img_operate.dir/main.cu.o"
+"CMakeFiles/img_operate.dir/trans_rot.cu.o"
 
 # External object files for target img_operate
 img_operate_EXTERNAL_OBJECTS =
 
-img_operate: CMakeFiles/img_operate.dir/main.cu.o
+img_operate: CMakeFiles/img_operate.dir/trans_rot.cu.o
 img_operate: CMakeFiles/img_operate.dir/build.make
 img_operate: /usr/local/lib/libopencv_gapi.so.4.5.5
 img_operate: /usr/local/lib/libopencv_stitching.so.4.5.5

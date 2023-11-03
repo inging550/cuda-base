@@ -111,44 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named img_operate
+# Target rules for targets named filter
 
 # Build rule for target.
-img_operate: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 img_operate
-.PHONY : img_operate
+filter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 filter
+.PHONY : filter
 
 # fast build rule for target.
-img_operate/fast:
-	$(MAKE) -f CMakeFiles/img_operate.dir/build.make CMakeFiles/img_operate.dir/build
-.PHONY : img_operate/fast
+filter/fast:
+	$(MAKE) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/build
+.PHONY : filter/fast
 
-main.o: main.cu.o
+#=============================================================================
+# Target rules for targets named trans_rot
 
-.PHONY : main.o
+# Build rule for target.
+trans_rot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trans_rot
+.PHONY : trans_rot
+
+# fast build rule for target.
+trans_rot/fast:
+	$(MAKE) -f CMakeFiles/trans_rot.dir/build.make CMakeFiles/trans_rot.dir/build
+.PHONY : trans_rot/fast
+
+filter.o: filter.cu.o
+
+.PHONY : filter.o
 
 # target to build an object file
-main.cu.o:
-	$(MAKE) -f CMakeFiles/img_operate.dir/build.make CMakeFiles/img_operate.dir/main.cu.o
-.PHONY : main.cu.o
+filter.cu.o:
+	$(MAKE) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/filter.cu.o
+.PHONY : filter.cu.o
 
-main.i: main.cu.i
+filter.i: filter.cu.i
 
-.PHONY : main.i
+.PHONY : filter.i
 
 # target to preprocess a source file
-main.cu.i:
-	$(MAKE) -f CMakeFiles/img_operate.dir/build.make CMakeFiles/img_operate.dir/main.cu.i
-.PHONY : main.cu.i
+filter.cu.i:
+	$(MAKE) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/filter.cu.i
+.PHONY : filter.cu.i
 
-main.s: main.cu.s
+filter.s: filter.cu.s
 
-.PHONY : main.s
+.PHONY : filter.s
 
 # target to generate assembly for a file
-main.cu.s:
-	$(MAKE) -f CMakeFiles/img_operate.dir/build.make CMakeFiles/img_operate.dir/main.cu.s
-.PHONY : main.cu.s
+filter.cu.s:
+	$(MAKE) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/filter.cu.s
+.PHONY : filter.cu.s
+
+trans_rot.o: trans_rot.cu.o
+
+.PHONY : trans_rot.o
+
+# target to build an object file
+trans_rot.cu.o:
+	$(MAKE) -f CMakeFiles/trans_rot.dir/build.make CMakeFiles/trans_rot.dir/trans_rot.cu.o
+.PHONY : trans_rot.cu.o
+
+trans_rot.i: trans_rot.cu.i
+
+.PHONY : trans_rot.i
+
+# target to preprocess a source file
+trans_rot.cu.i:
+	$(MAKE) -f CMakeFiles/trans_rot.dir/build.make CMakeFiles/trans_rot.dir/trans_rot.cu.i
+.PHONY : trans_rot.cu.i
+
+trans_rot.s: trans_rot.cu.s
+
+.PHONY : trans_rot.s
+
+# target to generate assembly for a file
+trans_rot.cu.s:
+	$(MAKE) -f CMakeFiles/trans_rot.dir/build.make CMakeFiles/trans_rot.dir/trans_rot.cu.s
+.PHONY : trans_rot.cu.s
 
 # Help Target
 help:
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... img_operate"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... filter"
+	@echo "... trans_rot"
+	@echo "... filter.o"
+	@echo "... filter.i"
+	@echo "... filter.s"
+	@echo "... trans_rot.o"
+	@echo "... trans_rot.i"
+	@echo "... trans_rot.s"
 .PHONY : help
 
 

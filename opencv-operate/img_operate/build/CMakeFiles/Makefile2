@@ -53,7 +53,8 @@ CMAKE_BINARY_DIR = /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/buil
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/img_operate.dir/all
+all: CMakeFiles/filter.dir/all
+all: CMakeFiles/trans_rot.dir/all
 
 .PHONY : all
 
@@ -63,36 +64,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/img_operate.dir/clean
+clean: CMakeFiles/filter.dir/clean
+clean: CMakeFiles/trans_rot.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/img_operate.dir
+# Target rules for target CMakeFiles/filter.dir
 
 # All Build rule for target.
-CMakeFiles/img_operate.dir/all:
-	$(MAKE) -f CMakeFiles/img_operate.dir/build.make CMakeFiles/img_operate.dir/depend
-	$(MAKE) -f CMakeFiles/img_operate.dir/build.make CMakeFiles/img_operate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles --progress-num=1,2 "Built target img_operate"
-.PHONY : CMakeFiles/img_operate.dir/all
+CMakeFiles/filter.dir/all:
+	$(MAKE) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/depend
+	$(MAKE) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles --progress-num=1,2 "Built target filter"
+.PHONY : CMakeFiles/filter.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/img_operate.dir/rule: cmake_check_build_system
+CMakeFiles/filter.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/img_operate.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/filter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles 0
-.PHONY : CMakeFiles/img_operate.dir/rule
+.PHONY : CMakeFiles/filter.dir/rule
 
 # Convenience name for target.
-img_operate: CMakeFiles/img_operate.dir/rule
+filter: CMakeFiles/filter.dir/rule
 
-.PHONY : img_operate
+.PHONY : filter
 
 # clean rule for target.
-CMakeFiles/img_operate.dir/clean:
-	$(MAKE) -f CMakeFiles/img_operate.dir/build.make CMakeFiles/img_operate.dir/clean
-.PHONY : CMakeFiles/img_operate.dir/clean
+CMakeFiles/filter.dir/clean:
+	$(MAKE) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/clean
+.PHONY : CMakeFiles/filter.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/trans_rot.dir
+
+# All Build rule for target.
+CMakeFiles/trans_rot.dir/all:
+	$(MAKE) -f CMakeFiles/trans_rot.dir/build.make CMakeFiles/trans_rot.dir/depend
+	$(MAKE) -f CMakeFiles/trans_rot.dir/build.make CMakeFiles/trans_rot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles --progress-num=3,4 "Built target trans_rot"
+.PHONY : CMakeFiles/trans_rot.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/trans_rot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/trans_rot.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjl/桌面/project/CUDA/opencv-operate/img_operate/build/CMakeFiles 0
+.PHONY : CMakeFiles/trans_rot.dir/rule
+
+# Convenience name for target.
+trans_rot: CMakeFiles/trans_rot.dir/rule
+
+.PHONY : trans_rot
+
+# clean rule for target.
+CMakeFiles/trans_rot.dir/clean:
+	$(MAKE) -f CMakeFiles/trans_rot.dir/build.make CMakeFiles/trans_rot.dir/clean
+.PHONY : CMakeFiles/trans_rot.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
