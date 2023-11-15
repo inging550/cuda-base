@@ -1,8 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <cuda.h>
-#include<cuda_runtime.h>
-
+#include <cuda_runtime.h>
 
 #define NUM_THREADS 1000
 #define SIZE 10
